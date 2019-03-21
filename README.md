@@ -14,6 +14,7 @@ Hello! I'm excited that you visited my repository, thank you! You can have your 
   6. Delete an element in certain position
   7. Display Forward
   8. Display Backward
+  9. Sort
 
 <h2> Announcements </h2>
   
