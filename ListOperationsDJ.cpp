@@ -1,11 +1,9 @@
 // djourdan555@gmail.com
 #include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
 #include <cstdlib>
 #include <ctime>
-
-using namespace std;
+#include <string>
+#include <stack>
 
 void hello(char *s) {
 	printf("\n");
@@ -301,7 +299,7 @@ int main () {
 	}
 
 	if (type == 1) {
-        while (pil == "Y" || pil == "y" || input_1 != 9) {
+        while ((pil == "Y" || pil == "y" )&& input_1 != 9) {
             system("cls");
             list1.displayForward();
             printf("\n\nSingle Linked List\n");
@@ -322,7 +320,7 @@ int main () {
                 printf("2. Insert End\n");
                 printf("3. Insert at certain postition\n");
                 printf("9. Exit\n");
-                printf("Where do you want to insert your element?"); scanf("%i", &input_2);
+                printf("Where do you want to insert your element? "); scanf("%i", &input_2);
                 printf("\n");
                 if (input_2 == 1) { // input front
                     printf("Input your data : "); scanf("%i", &input_2);
@@ -394,7 +392,7 @@ int main () {
             } else exit(0);
         }
 	} else if (type == 2) {
-        while (pil == "Y" || pil == "y" || input_1 != 9) {
+        while ((pil == "Y" || pil == "y" ) && input_1 != 9) {
             system("cls");
             list1.displayForward();
             printf("\n\nDouble Linked List\n");
